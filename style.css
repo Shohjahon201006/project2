@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 1920px;
-    padding: 50px;
+    padding: 20px 200px;
 }
 
 h1 {
@@ -28,18 +28,22 @@ h1 {
 }
 
 .icons {
-    display: flex;
-    gap: 15px;
+  width: 102px;
+  height: 28px;
+  display: flex;
+  gap: 15px;
 }
 .logo1 {
-  width: 100px;
+  width: 174px;
+  height: 69px;
 }
 
 .search-icon, .menu-icon {
     cursor: pointer;
 }
 .search-icon {
-  width: 20px;
+  width: 32px;
+  height: 32px;
 }
 
 .search-icon:hover, .menu-icon:hover {
@@ -50,12 +54,13 @@ h1 {
     justify-content: space-between;
     align-items: center;
     max-width: 1920px;
-   padding: 100px;
+    padding: 200px;
     min-height: 100vh;
 }
 
 .content {
-    max-width: 50%;
+  color: #333333;
+  max-width: 50%;
 }
 
 h1 {
@@ -149,7 +154,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 60px;
-    padding: 30px;
+    padding: 20px ;
 }
 
 .card {
@@ -205,7 +210,7 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   width: 90%;
-  padding: 110px;
+  padding: 200px;
   max-width: 1920px;
 }
 
@@ -227,7 +232,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  padding: 30px;
+  padding: 200px;
 }
 
 .client-photo img {
@@ -553,214 +558,209 @@ textarea:focus {
 }
 
 
-@media (max-width: 796px) {
+@media (max-width: 1440px) {
   .header-content {
-    display: flex;
-    
+    padding: 20px 100px;
   }
-  .menu-icon {
+  .hero {
+    padding: 120px;
+  }
+  .content h2 {
+    font-size: 40px;
+  }
+  .gallery {
+    padding: 100px;
+  }
+  main {
+    gap: 40px;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 1152px) {
+  .header-content {
+    padding: 20px 60px;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 40px;
+  }
+  .content {
+    max-width: 100%;
+  }
+  .social-icons {
+    margin-top: 40px;
+    justify-content: center;
+  }
+  .image img {
+    max-width: 80%;
+  }
+  .cards {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 60px;
+  }
+  .client-text {
+    width: 100%;
+  }
+  .quote-text {
+    margin-top: 40px;
+  }
+  .quote-icon2 {
+    width: 30%;
+    margin-top: 40px;
+  }
+  main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: 10px 20px;
+  }
+  .background-text {
+    display: none;
+  }
+  .logo1 {
+    width: 120px;
+    height: auto;
+  }
+  .search-icon {
     display: none;
   }
   .menu-icon2 {
     display: block;
   }
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 30px 15px;
-  }
-
-  .content {
-    max-width: 100%;
-  }
-
-  .search-icon {
+  .menu-icon {
     display: none;
   }
 
-  .image {
-      width: 100%;
+  .hero {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
   }
-
+  .content h2 {
+    font-size: 32px;
+  }
+  .content p {
+    font-size: 16px;
+  }
+  .social-icons {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .video-container {
+    max-width: 100%;
+    height: auto;
+    clip-path: none;
+  }
   .cards {
     flex-direction: column;
     align-items: center;
   }
-
   .card {
     width: 90%;
-    padding: 30px;
+    height: auto;
   }
-
   .gallery {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 15px;
+    grid-template-columns: 1fr;
+    padding: 20px;
   }
-
   .testimonial-box {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
-
-  .client-photo img {
-    margin: 0 auto 20px;
+  .quote-icon2 {
+    width: 60%;
   }
-
-  .client-text {
-    text-align: center;
+  .contact-section {
+    padding: 40px 20px;
   }
-
-  .background-text {
-    display: none;
-    font-size: 80px;
-  }
-
   .stats-section {
     flex-direction: column;
     align-items: center;
   }
-
-  .stat {
-    width: 80%;
-  }
-
   main {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .post {
-    width: 90%;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  .what-h1 {
-    font-size: 28px;
-    margin-top: 150px;
-  }
-
-  .contact-section h2 {
-    font-size: 28px;
-  }
-  .contact-section {
-    background-color: #333;
-    color: #fff;
-  }
-   .hire-title {
-    font-size: 30px;
-    text-align: left;
-  }
-
-  .hire-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .hire-desc {
-    font-size: 18px;
-  }
-
-  .form-box {
+    
+    gap: 20px;
     padding: 20px;
   }
-
-  .form-actions {
-    justify-content: center;
+  .hire-grid {
+    grid-template-columns: 1fr;
   }
 }
 
-
-@media (min-width: 800px) and (max-width: 1000px) {
+@media (max-width: 480px) {
+  .header-content {
+    padding: 10px;
+  }
+  .logo1 {
+    width: 100px;
+  }
   .hero {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 40px 20px;
+    padding: 40px 10px;
   }
-
-  .content {
-    max-width: 80%;
+  .content h2 {
+    font-size: 24px;
   }
-
-  .image {
-    margin-top: 30px;
-    width: 90%;
+  .content p {
+    font-size: 14px;
   }
-
+  .social-icons {
+    gap: 10px;
+    font-size: 18px;
+  }
+  .image img {
+    width: 100%;
+  }
   .cards {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-
-  .card {
-    width: 45%;
-    padding: 40px;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-
-  .testimonial-box {
-    flex-direction: column;
+  .card {
+    width: 100%;
+    padding: 20px;
   }
-
-  .client-photo img {
-    margin: 0 auto 20px;
-  }
-
-  .client-text {
-    text-align: center;
-  }
-
-  .stats-section {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .stat {
-    width: 45%;
-    margin: 10px;
-  }
-
-  .post {
-    width: 45%;
-  }
-
   .what-h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
-
+  .testimonial-box {
+    padding: 10px;
+  }
+  .quote {
+    font-size: 14px;
+  }
   .contact-section h2 {
-    font-size: 30px;
+    font-size: 24px;
   }
-  .contact-section{
-    background-color: #333;
-    color: #fff;
+  .contact-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
   }
-
+  .stats-section {
+    padding: 20px;
+  }
+  .stat h3 {
+    font-size: 24px;
+  }
+  .stat p {
+    font-size: 12px;
+  }
+  main {
+    margin: auto;
+    padding: 10px;
+  }
+  .hire-title {
+    font-size: 28px;
+  }
   .background-text {
-    font-size: 120px;
-  }
-    .hire-title {
-    font-size: 36px;
-  }
-
-  .hire-grid {
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 32px;
-  }
-
-  .hire-desc {
-    font-size: 20px;
-  }
-
-  .form-box {
-    padding: 24px;
+    display: none;
   }
 }
