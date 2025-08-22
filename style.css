@@ -11,7 +11,8 @@ span, a, label {
     display: inline-block;
 }
 header {
-    padding: 10px 20px;
+  text-align: center;
+
 }
 
 .header-content {
@@ -28,7 +29,7 @@ h1 {
 }
 
 .icons {
-  width: 102px;
+
   height: 28px;
   display: flex;
   gap: 15px;
@@ -141,9 +142,9 @@ h1 {
     color: #fff;
     background-color: rgba(0, 0, 0,  0.9);
     border-radius: 50%;
-    width: 12%;
-    height: 85px;
-    padding: 20px;
+    width: 90px;
+    height: 90px;
+    padding: 21px;
     cursor: pointer;
 }
 .play-button:hover {
@@ -401,11 +402,7 @@ main {
     display: flex;
     justify-content: center;
     max-width: 1920px;
-    padding: 50px;
-    top: 140px;
-    right: 200px;
-    bottom: 140px;
-    left: 200px; 
+    padding: 30 200px; 
     gap: 60px;
 }
 
@@ -442,16 +439,12 @@ main {
 .read-more:hover {
     text-decoration: underline;
 }
-
-
-
-
 .hire-section {
   padding: 48px 16px 72px;
 }
 
 .hire-container {
-  max-width: 1100px;
+  max-width: 1262px;
   margin: 0 auto;
 }
 
@@ -619,8 +612,15 @@ textarea:focus {
     justify-content: center;
   }
 }
-
-@media (max-width: 768px) {
+@media (max-width: 550px) {
+   .client-img {
+    width: 530px;
+  }
+  .client-text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 935px) {
   .header-content {
     padding: 10px 20px;
   }
@@ -640,14 +640,16 @@ textarea:focus {
   .menu-icon {
     display: none;
   }
-
+   .client-img {
+    width: 500px;
+  }
   .hero {
     flex-direction: column;
     padding: 60px 20px;
     text-align: center;
   }
   .content h2 {
-    font-size: 32px;
+    display: none;
   }
   .content p {
     font-size: 16px;
@@ -696,8 +698,8 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 }
-
-@media (max-width: 480px) {
+  
+@media (max-width: 615px) {
   .header-content {
     padding: 10px;
   }
@@ -732,6 +734,9 @@ textarea:focus {
   }
   .testimonial-box {
     padding: 10px;
+  }
+  .client-img {
+    width: 300px;
   }
   .quote {
     font-size: 14px;
